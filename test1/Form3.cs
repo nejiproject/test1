@@ -16,5 +16,17 @@ namespace test1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1.TextChildrenNode = textBox1.Text.ToString();
+            Form1.rootNode2 = textBox2.Text.ToString();
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
