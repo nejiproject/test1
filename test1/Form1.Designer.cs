@@ -40,21 +40,22 @@
             this.tableTableAdapter = new test1.Database1DataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new test1.Database1DataSetTableAdapters.TableAdapterManager();
             this.tableGridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.database1DataSet1 = new test1.Database1DataSet();
-            this.tableTableAdapter1 = new test1.Database1DataSetTableAdapters.TableTableAdapter();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colФИО = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colДатарождения = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colПроффесия = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colЗП = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colПол = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tableTableAdapter1 = new test1.Database1DataSetTableAdapters.TableTableAdapter();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeList1
@@ -151,10 +152,15 @@
             this.tableGridControl.Location = new System.Drawing.Point(388, 36);
             this.tableGridControl.MainView = this.gridView1;
             this.tableGridControl.Name = "tableGridControl";
-            this.tableGridControl.Size = new System.Drawing.Size(917, 488);
+            this.tableGridControl.Size = new System.Drawing.Size(917, 430);
             this.tableGridControl.TabIndex = 4;
             this.tableGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // database1DataSet1
+            // 
+            this.database1DataSet1.DataSetName = "Database1DataSet";
+            this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
@@ -167,15 +173,6 @@
             this.colПол});
             this.gridView1.GridControl = this.tableGridControl;
             this.gridView1.Name = "gridView1";
-            // 
-            // database1DataSet1
-            // 
-            this.database1DataSet1.DataSetName = "Database1DataSet";
-            this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableTableAdapter1
-            // 
-            this.tableTableAdapter1.ClearBeforeFill = true;
             // 
             // colId
             // 
@@ -219,11 +216,26 @@
             this.colПол.Visible = true;
             this.colПол.VisibleIndex = 5;
             // 
+            // tableTableAdapter1
+            // 
+            this.tableTableAdapter1.ClearBeforeFill = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(482, 501);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(279, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Добавить поле в таблицу";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1335, 548);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.tableGridControl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -237,8 +249,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,6 +276,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colЗП;
         private DevExpress.XtraGrid.Columns.GridColumn colПол;
         private Database1DataSetTableAdapters.TableTableAdapter tableTableAdapter1;
+        private System.Windows.Forms.Button button4;
     }
 }
 

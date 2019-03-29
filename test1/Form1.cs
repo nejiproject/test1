@@ -68,5 +68,11 @@ namespace test1
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 newForm4 = new Form4();
+            newForm4.ShowDialog();
+        }
     }
 }
